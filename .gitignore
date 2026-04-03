@@ -1,0 +1,6 @@
+node_modules/
+.env
+upload-log.json
+error.log
+run.log
+uploaded-videos-db.json

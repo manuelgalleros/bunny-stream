@@ -1,0 +1,25 @@
+{
+  "name": "bunny-stream-bulk-uploader",
+  "version": "1.0.0",
+  "description": "Production-ready Bunny Stream bulk uploader CLI",
+  "main": "uploader.js",
+  "scripts": {
+    "start": "node uploader.js",
+    "reset": "node uploader.js --reset",
+    "retry-failed": "node uploader.js --retry-failed",
+    "logs": "node uploader.js --view-logs",
+    "check": "node --check uploader.js && node --check src/prereq.js && node --check src/main.js && node --check src/utils.js && node --check src/logStore.js && node --check src/bunnyClient.js && node --check src/uploadRunner.js && node --check src/videoDb.js && node --check src/logViewer.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.12.0",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  }
+}
